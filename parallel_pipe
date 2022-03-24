@@ -1,0 +1,12 @@
+stage('run-parallel-branches') {
+  steps {
+    parallel(
+      step1: {
+        echo "Good morning"
+      },
+      step2: {
+        echo "Good evening"
+      }
+    )
+  }
+}
