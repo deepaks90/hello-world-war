@@ -18,7 +18,7 @@ pipeline{
        stage('publish'){
                   steps{
                         sh "docker login -u deepaks90 -p Deep@k123"
-                        sh "docker push  dileep288/docwarimage:1.0"
+                        sh "docker push  deepaks90/docwarimage:1.0"
                   }
             }
             stage('deploy'){
