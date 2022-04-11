@@ -26,7 +26,7 @@ pipeline{
                   steps{
                         sh "docker login -u deepaks90 -p Deep@k123"
                         sh "docker pull deepaks90/docwarimage:1.0"
-                        //sh "docker rm -f trail1"
+                        sh "docker rm -f trail1"
                         sh "docker run -d -p 8086:8080 --name trail1 deepaks90/docwarimage:1.0"
                   }
             }
